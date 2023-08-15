@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="header">
+    <Center><h1><p>GEOLOCATION</p></h1></Center>
+    </div>
+   <div class="text">
+    <h3><p>In the HTML file, add the following elements:
+
+      A div element with the id map to display the map.
+      A script element to load the Bing Maps API library.
+      A script element to initialize the map and get the user's location.
+      In the CSS file, style the map element to your liking.
+      
+      In the JavaScript file, first check if the Geolocation API is supported. If it is, then get the user's location using the navigator.geolocation.getCurrentPosition() method. The getCurrentPosition() method returns a promise, so you need to use the then() method to handle the success and failure cases.
+      In the success case, the then() method will be passed a Position object that contains the user's latitude and longitude. You can use this information to initialize the map and center it on the user's location.</p></h3>
+    </div> 
+    <div class="line">
+      <center><p>MAP</p></center>
+    </div>
+    <div id="map"></div>
+    <script src="https://www.bing.com/api/maps/mapcontrol?key=AkFEmJNcuq7yKCRGhlhnDSRKQI10zGBoO86phNi6DS_8WMQDUVz8sL-PvkSYLL3C&callback=initMap" async defer></script>
+    <script src="map.js"></script>
+    <div class="line1">
+      <center><p>END</p></center>
+    </div>
+</body>
+</html>
